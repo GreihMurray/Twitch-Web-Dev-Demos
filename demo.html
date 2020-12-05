@@ -3,22 +3,86 @@
 		<title>Twitch Stream Thing</title>
 	</head>
 	
-	<body>
+	<body style="background-image:url(drag.jpg);background-repeat:no-repeat" onload="" onunload="thingy()">
 		<p><b>Text text <i>thing <u>thing</i> bob joe</u> doe </b></p>
 		
-		<h1>Title <br> H1</h1>
+		<div>
+			<h1>Title <br> H1</h1>
+			
+			<br/>
+			<center>
+				<div style="border:12px solid blue;width:300px">
+					<ol>
+						<li>top</li>
+						<li>thing</li>
+						<li>bob</li>
+					</ol>
+				</div>
+			</center>
+			
+			<hr width="80%"> 
+			
+			<ul>
+				<li>top</li>
+				<li>thing</li>
+				<li>bob</li>
+			</ul>
+			
+			<table width="80%" height="25%">
+				<tr>
+					<th style="border:3px solid black" width="80%">Cell 1</th>
+					<td style="border:3px solid green" rowspan="2">Cell 2</td>
+					<td style="border:3px solid green">Cell 2</td>
+					<td style="border:3px solid green">Cell 2</td>
+					<td style="border:3px solid green">Cell 2</td>
+					<td style="border:3px solid green">Cell 2</td>
+				</tr>
+				<tr>
+					<td style="border:3px solid #FFDEAD">cell 3</td>
+					<td style="border:3px solid pink" colspan="6">cell 4</td>
+				</tr>
+			</table>
 		
-		<br/>
+		</div>
 		
-		<h2>H2</h2>
-		<h3>H3</h3>
-		<br><br>
-		<h4>H4</h4>
-		<h5>h5</h5>
-		<h6>h6</h6>
+		<form>
+			<label for="text">Box</label>
+			<input type="text" id="text" name="Jean von Claude">
+			<br>
+			<label for="name">Buttons</label><br>
+			<input type="radio" id="Radio" value="Bill" name="name">
+			<br>
+			<input type="radio" id="Radio" name="name" value="Jill">
+			<br>
+			<label for="a">AAAAAAAAAAAAAAAAAAAAAAAA</label><br>
+			<input type="radio" id="Radio" value="Bill" name="a">
+			<br>
+			<input type="radio" id="Radio" name="a" value="Jill">
+			
+			<br><br>
+			
+			<input type="checkbox" id="check" name="joe?">
+			<label for="check">Joe?</label>
+			<input type="checkbox" id="check" name="joe?">
+			<label for="check">bob?</label>
+			<input type="checkbox" id="check" name="joe?">
+			<label for="check">sue?</label>
+			<input type="checkbox" id="check" name="joe?">
+			<label for="check">Sanka, ya dead?</label>
+			
+			<br>
+			
+			<button onclick="thingy()" value="Thing">Thingy</button>
+			<input type="submit">
+		</form>
 		
-		<a href="https://www.google.com"><b>Text Link</b></a>
 	</body>
+	
+	<script>
+		function thingy(){
+			window.open("demo.html", "_blank");
+		}
+	</script>
 	
 	<footer>
 		
